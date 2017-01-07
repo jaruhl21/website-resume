@@ -1,0 +1,108 @@
+html, body {
+	height: 100%;
+}
+
+#map {
+    height: 200px;
+    width: 75%;
+}
+
+.navbar {
+	height: 130px;
+}
+
+.navbar-header {
+	height: 130px;
+}
+
+.navbar-right {
+	padding-right: 20px;
+}
+
+.topper-dark {
+	background: #ff8c1a;
+	padding: 5px;
+	padding-right: 20px;
+	text-align: right;
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.slide-size {
+	padding-top: 130px;
+	height: 100%;
+}
+
+.seperator {
+	background-color: #ff8c1a;
+	text-align: center; 
+	color: #ff8c1a;
+}
+
+.seperator > a:hover {
+	color: #ff8c1b;
+}
+
+.body-black {
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center; 
+	padding: 20px;
+}
+
+.thumbnail {
+	background-color: #000000;
+	border-color: #000000;
+}
+
+.caption {
+	color: #ffffff;
+}
+ 
+.section {
+	background-color: #ff8c1a;
+ 	height: 100%;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+}
+
+.subsection {
+ 	background-color: black;
+ 	min-height: 10%;
+ 	color: white;
+}
+
+.sectOne {
+ 	background-image: url(../Images/homepage/pic1.jpg);
+}
+
+.sectTwo {
+ 	background-image: url(../Images/homepage/pic2.jpg);
+}
+
+.sectThree {
+ 	background-image: url(../Images/homepage/pic3.jpg);
+}
+
+.partners {
+	background-color: white;
+	padding-top: 100px;
+	padding-bottom: 150px;
+	color: black;
+}
+
+.home-about {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.footer-strip {
+	background-color: #ff8c1a;
+	color: white;
+	text-align: left;
+}
+
+.partner-image {
+	max-width: 100%;
+}
