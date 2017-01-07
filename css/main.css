@@ -83,10 +83,12 @@ html, body {
 
 .sectTwo {
  	background-image: url(../Images/homepage/pic2.jpg);
+ 	height: 60%
 }
 
 .sectThree {
  	background-image: url(../Images/homepage/pic3.jpg);
+ 	height: 60%;
 }
 
 .partners {
