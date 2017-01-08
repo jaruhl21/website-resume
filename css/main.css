@@ -93,14 +93,20 @@ html, body {
 
 .partners {
 	background-color: white;
-	padding-top: 100px;
-	padding-bottom: 150px;
+	padding-top: 80px;
+	padding-bottom: 135px;
 	color: black;
 }
 
 .home-about {
 	text-align: center;
 	padding-bottom: 20px;
+}
+
+.home-about-paragraph {
+	text-align: center;
+	padding-bottom: 0px;
+	padding-top: 20px
 }
 
 .footer-strip {
