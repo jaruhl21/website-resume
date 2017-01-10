@@ -7,12 +7,9 @@ html, body {
     width: 75%;
 }
 
-.navbar {
-	height: 130px;
-}
-
-.navbar-header {
-	height: 130px;
+.navbar-padding {
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .navbar-right {
@@ -20,7 +17,11 @@ html, body {
 }
 
 .navbar-brand {
-	max-width: 90%;
+	padding-top: 10px;
+}
+
+.navbar-logo {
+	height: 80px;
 }
 
 .topper-dark {
@@ -73,7 +74,7 @@ html, body {
 
 .subsection {
  	background-color: black;
- 	min-height: 10%;
+ 	min-height: 25%;
  	color: white;
 }
 
@@ -83,7 +84,7 @@ html, body {
 
 .sectTwo {
  	background-image: url(../Images/homepage/pic2.jpg);
- 	height: 60%
+ 	height: 60%;
 }
 
 .sectThree {
@@ -91,10 +92,23 @@ html, body {
  	height: 60%;
 }
 
+.sectOne-about {
+	padding-top: 100px;
+	background-image: url(../Images/about/company.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 50%;
+}
+
+.sectTwo-about {
+	background-image: url(../Images/about/pic.jpg);
+	height: 50%;
+}
+
 .partners {
 	background-color: white;
-	padding-top: 80px;
-	padding-bottom: 135px;
+	padding: 50px;
+	padding-bottom: 100px;
 	color: black;
 }
 
@@ -104,9 +118,13 @@ html, body {
 }
 
 .home-about-paragraph {
+	height: 300px;
 	text-align: center;
 	padding-bottom: 0px;
-	padding-top: 20px
+	padding-top: 20px;
+	padding-left: 150px;
+	padding-right: 150px;
+	vertical-align: middle;
 }
 
 .footer-strip {
@@ -123,4 +141,41 @@ html, body {
 	color: white;
 	text-align: center;
 	padding-top: 300px;
+}
+
+.about-text {
+	text-align: center;
+	padding: 25px;
+}
+
+@media (max-width: 1160px) {
+	.home-about-paragraph {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.sectOne {
+		height: 60%;
+	}
+
+	.slide-size {
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navber-brand {
+		height: 80px;
+	}
+
+	.navbar-logo {
+		height: 60px;
+		padding-top: 10px;
+	}
+
+	.home-about-paragraph {
+		height: 500px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
