@@ -179,7 +179,14 @@
 			</div>
 		</div>
 		
-		<div class="section sectThree"></div>
+		<div class="section sectThree">
+			<div class="email-signup">
+				<h1>Sign up to our newsletter to stay up to date on our latest offerings!</h1>
+				<form>
+					E-mail: <input style="color: black; border-radius: 10px" type="email" name="email"> <input style="border-radius: 10px; background-color: #E47201" type="submit">
+					</form>
+			</div>
+		</div>
 		
 		<div class="subsection">
 			<div class="row">
@@ -196,8 +203,13 @@
 						<div class="col-xs-12" style="color: black">a</div>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<h1 style="padding-top: 50px">Contact us today!</h1>
+				<div class="col-sm-6 footer-contact">
+					<h1>Contact us today!</h1>
+					<p>E-mail: 
+						<a href="mailto:info@macavionics.com">info@macavionics.com</a>
+					</p>
+					<p>Address: 3482 Airfield Drive W Lakeland, FL 33811</p>
+					<p>Phone: (863) 646-8790</p> 
 				</div>
 			</div>
 		</div>
@@ -235,7 +247,7 @@
 			function initMap() {
 				var uluru = {lat: 27.994168, lng: -82.016763};
 				var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 16,
+					zoom: 15,
 					center: uluru,
 					clickableIcons: true
 				});

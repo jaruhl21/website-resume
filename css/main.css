@@ -2,6 +2,12 @@ html, body {
 	height: 100%;
 }
 
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
 #map {
     height: 200px;
     width: 75%;
@@ -25,7 +31,7 @@ html, body {
 }
 
 .topper-dark {
-	background: #ff8c1a;
+	background: #E47201;
 	padding: 5px;
 	padding-right: 20px;
 	text-align: right;
@@ -39,13 +45,13 @@ html, body {
 }
 
 .seperator {
-	background-color: #ff8c1a;
+	background-color: #E47201;
 	text-align: center; 
-	color: #ff8c1a;
+	color: #E47201;
 }
 
-.seperator > a:hover {
-	color: #ff8c1b;
+a:hover {
+	color: #E47201;
 }
 
 .body-black {
@@ -65,7 +71,7 @@ html, body {
 }
  
 .section {
-	background-color: #ff8c1a;
+	background-color: #E47201;
  	height: 100%;
  	background-size: cover;
  	background-repeat: no-repeat;
@@ -89,7 +95,7 @@ html, body {
 
 .sectThree {
  	background-image: url(../Images/homepage/pic3.jpg);
- 	height: 60%;
+ 	height: 500px;
 }
 
 .sectOne-about {
@@ -97,7 +103,7 @@ html, body {
 	background-image: url(../Images/about/company.jpg);
 	background-size: cover;
 	background-position: center;
-	height: 50%;
+	height: 70%;
 }
 
 .sectTwo-about {
@@ -128,7 +134,7 @@ html, body {
 }
 
 .footer-strip {
-	background-color: #ff8c1a;
+	background-color: #E47201;
 	color: white;
 	text-align: left;
 }
@@ -140,7 +146,13 @@ html, body {
 .store-coming-soon {
 	color: white;
 	text-align: center;
-	padding-top: 300px;
+	padding-top: 200px;
+}
+
+.email-signup {
+	color: white;
+	text-align: center;
+	padding-top: 150px;
 }
 
 .about-text {
@@ -148,10 +160,65 @@ html, body {
 	padding: 25px;
 }
 
+.about-paragraph {
+	padding: 75px 150px;
+}
+
+.about-paragraph-2 {
+	padding: 35px 150px;
+}
+
+.service-image {
+	background-color: aqua;
+	height: 300px;
+	background-image: url(../Images/services/adsbEquipmentInstallation.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.serviceOne {
+	background-image: url(../Images/services/electronicFlightDisplayInstallation.jpg);
+}
+
+.serviceTwo {
+	background-image: url(../Images/services/backupElectronicDisplayInstallation.jpg);
+}
+
+.serviceThree {
+	background-image: url(../Images/services/adsbEquipmentInstallation.jpg);
+}
+
+.serviceFour {
+	background-image: url(../Images/services/audioPanelInstallation.jpg);
+}
+
+.serviceFive {
+	background-image: url(../Images/services/autopilotSystemInstallation.jpg);
+}
+
+.serviceSix {
+	background-image: url(../Images/services/avionicInspection.jpg);
+}
+
+.service-description {
+	height: 300px;
+	line-height: 150px;
+	padding: 0px 30px;
+}
+
+.footer-contact {
+	padding: 50px;
+}
+
 @media (max-width: 1160px) {
-	.home-about-paragraph {
+	.home-about-paragraph, .about-paragraph, .about-paragraph-2 {
 		padding-left: 20px;
 		padding-right: 20px;
+		padding-bottom: 5px;
+	}
+
+	.about-paragraph {
+		padding-top: 40px;
 	}
 
 	.sectOne {
@@ -178,5 +245,10 @@ html, body {
 		padding-bottom: 30px;
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+
+	.service-description {
+		height: 100%;
+		line-height: 100%;
 	}
 }
