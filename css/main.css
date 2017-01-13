@@ -180,6 +180,28 @@ a:hover {
 	background-position: center;
 }
 
+.about-image {
+	background-color: aqua;
+	height: 300px;
+	background-image: url(../Images/services/adsbEquipmentInstallation.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.aboutOne {
+	background-image: url(../Images/about/dash.jpg);
+}
+
+.aboutTwo {
+	background-image: url(../Images/about/buildingOutside.jpg);
+}
+
+.about-description {
+	height: 300px;
+	line-height: 300px;
+	padding: 0px 50px;
+}
+
 .serviceOne {
 	background-image: url(../Images/services/electronicFlightDisplayInstallation.jpg);
 }
@@ -260,6 +282,12 @@ a:hover {
 	.service-description {
 		height: 100%;
 		line-height: 100%;
+	}
+
+	.about-description {
+		height: 100%;
+		line-height: 100%;
+		padding: 10px;
 	}
 
 	.section {
