@@ -234,6 +234,12 @@ a:hover {
 	}
 }
 
+@media (max-width: 1025px) {
+	.section {
+		background-attachment: scroll;
+	}
+}
+
 @media (max-width: 767px) {
 	.navber-brand {
 		height: 80px;
