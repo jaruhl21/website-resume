@@ -30,7 +30,16 @@ span {
 	height: 80px;
 }
 
-.topper-dark {
+.topper-dark-left {
+	background: #E47201;
+	padding: 5px;
+	padding-left: 20px;
+	text-align: left;
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.topper-dark-right {
 	background: #E47201;
 	padding: 5px;
 	padding-right: 20px;
