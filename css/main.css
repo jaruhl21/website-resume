@@ -73,10 +73,12 @@ a:hover {
 .thumbnail {
 	background-color: #000000;
 	border-color: #000000;
+	max-width: 150%;
 }
 
 .caption {
 	color: #ffffff;
+	height: 100px;
 }
  
 .section {
@@ -182,7 +184,7 @@ a:hover {
 }
 
 .service-image {
-	background-color: aqua;
+	background-color: white;
 	height: 300px;
 	background-image: url(../Images/services/adsbEquipmentInstallation.jpg);
 	background-size: cover;
@@ -190,7 +192,7 @@ a:hover {
 }
 
 .about-image {
-	background-color: aqua;
+	background-color: white;
 	height: 300px;
 	background-image: url(../Images/services/adsbEquipmentInstallation.jpg);
 	background-size: cover;
@@ -208,7 +210,7 @@ a:hover {
 .about-description {
 	height: 300px;
 	line-height: 300px;
-	padding: 0px 50px;
+	padding: 0px 100px;
 }
 
 .serviceOne {
