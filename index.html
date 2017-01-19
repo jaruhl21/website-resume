@@ -1,4 +1,24 @@
+<?php
 
+	if(isset($_REQUEST["req-mail"]))
+	{
+		$to      = 'customers-subscribe@macavionics.com';
+		$subject = '';
+		$message = '';
+		$headers = 'From:' . $_REQUEST["req-mail"];
+
+		echo($headers);
+
+		if(mail($to, $subject, $message, $headers))
+		{
+			echo "mail sent!" . $_REQUEST["req-mail"];
+		} else {
+			echo "NOT SENT";
+		}
+		die();
+	}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -73,13 +93,12 @@
 		</nav>
 
 		<div class="section sectOne">
-			<img class="mySlides w3-animate-left slide-size center-block partner-image" src="Images/rotating/pic3.jpg">
 			<img class="mySlides w3-animate-left slide-size center-block partner-image" src="Images/rotating/pic1.jpg">
 			<img class="mySlides w3-animate-left slide-size center-block partner-image" src="Images/rotating/pic2.jpg">
+			<img class="mySlides w3-animate-left slide-size center-block partner-image" src="Images/rotating/pic3.jpg">
 			<img class="mySlides w3-animate-left slide-size center-block partner-image" src="Images/rotating/pic4.jpg">
 			<img class="mySlides w3-animate-left slide-size center-block partner-image" src="Images/rotating/pic5.jpg">
 			<img class="mySlides w3-animate-left slide-size center-block partner-image" src="Images/rotating/pic6.jpg">
-			<img class="mySlides w3-animate-left slide-size center-block partner-image" src="Images/rotating/pic7.jpg">
 		</div>
 
 		<div class="subsection">
@@ -88,7 +107,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-sm-4 partners">
+				<div class="col-sm-12 col-md-4 partners">
 					<h1 class="home-about">Partners</h1>
 					<a href="https://explore.garmin.com/en-US/general-aviation/">
 						<img class="mySlidesPartners w3-animate-bottom center-block partner-image" src="Images/partners/garmin.png" height="75px">
@@ -122,9 +141,11 @@
 					</a>
 				</div>
 
-				<div class="home-about-paragraph col-sm-8">
-					<h1>Mac Avionics is your source for quality avionics installation and maintenance</h1>
-					<h4>At Mac Avionics, we care about you and your plane. The owner is a pilot and knows firsthand the importance of having the best avionics equipment installed and working in your plane. When you call, the owner is likely the person you'll talk to. So don't hesitate to call for estimates, advice, or second opinions.</h4>
+				<div class="home-about-paragraph col-sm-12 col-md-8">
+					<span>
+						<h1>Mac Avionics is your source for quality avionics installation and maintenance</h1>
+						<h4>At Mac Avionics, we care about you and your plane. The owner is a pilot and knows firsthand the importance of having the best avionics equipment installed and working in your plane. When you call, the owner is likely the person you'll talk to. So don't hesitate to call for estimates, advice, or second opinions.</h4>
+					</span>
 				</div>
 				
 			</div>
@@ -146,7 +167,7 @@
 				      		<img style="border-radius: 10px; height: 200px;" src="Images/services/electronicFlightDisplayInstallation.jpg">
 				      	</a>
 				      	<div class="caption">
-				        	<h3><a href="services.html">Electronic Flight Display Installation</a></h3>
+				        	<h3 style="color: white"><a href="services.html">Electronic Flight Display Installation</a></h3>
 				      	</div>
 				    </div>
 				</div>
@@ -156,7 +177,7 @@
 				      		<img style="border-radius: 10px; height: 200px;" src="Images/services/backupElectronicDisplayInstallation.jpg">
 				      	</a>
 				      	<div class="caption">
-				        	<h3><a href="services.html">Backup Electronic Display Installation</a></h3>
+				        	<h3 style="color: white"><a href="services.html">Backup Electronic Display Installation</a></h3>
 				      	</div>
 				    </div>
 				</div>
@@ -166,7 +187,7 @@
 				      		<img style="border-radius: 10px; height: 200px;" src="Images/services/adsbEquipmentInstallation.png">
 				      	</a>
 				      	<div class="caption">
-				        	<h3><a href="services.html">ADS-B Equipment Installation</a></h3>
+				        	<h3 style="color: white"><a href="services.html">ADS-B Equipment Installation</a></h3>
 				      	</div>
 				    </div>
 				</div>
@@ -176,7 +197,7 @@
 				      		<img style="border-radius: 10px; height: 200px;" src="Images/services/audioPanelInstallation.png">
 				      	</a>
 				      	<div class="caption">
-				        	<h3><a href="services.html">Audio Panel Installation</a></h3>
+				        	<h3 style="color: white"><a href="services.html">Audio Panel Installation</a></h3>
 				      	</div>
 				    </div>
 				</div>
@@ -186,7 +207,7 @@
 				      		<img style="border-radius: 10px; height: 200px;" src="Images/services/autopilotSystemInstallation.png">
 				      	</a>
 				      	<div class="caption">
-				        	<h3><a href="services.html">Autopilot System Installation</a></h3>
+				        	<h3 style="color: white"><a href="services.html">Autopilot System Installation</a></h3>
 				      	</div>
 				    </div>
 				</div>
@@ -196,7 +217,7 @@
 				      		<img style="border-radius: 10px; height: 200px;" src="Images/services/avionicInspection.jpg">
 				      	</a>
 				      	<div class="caption">
-				        	<h3><a href="services.html">F.A.R. 91.411 and 91.413 Services</a></h3>
+				        	<h3 style="color: white"><a href="services.html">F.A.R. 91.411 and 91.413 Services</a></h3>
 				      	</div>
 				    </div>
 				</div>
