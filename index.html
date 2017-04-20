@@ -2,9 +2,9 @@
 
 	if(isset($_REQUEST["req-mail"]))
 	{
-		$to      = 'customers-subscribe@macavionics.com';
+		$to      = 'jordanruhl@gmail.com';
 		$subject = '';
-		$message = '';
+		$message = $_REQUEST["req-name"] . ' would like to reserve a spot for the ' . $_REQUEST["req-mail"] . 'seminar!';
 		$headers = 'From:' . $_REQUEST["req-mail"];
 
 		echo($headers);
@@ -20,7 +20,7 @@
 
 ?>
 
-<!DOCTYPE html>
+<!doctype HTML>
 <html lang="en">
   	<head>
     	<meta charset="utf-8">
@@ -225,18 +225,18 @@
 		</div>
 		
 		<div class="section sectThree">
-			<!--
+			
 			<div class="email-signup">
 				<h1>Sign up to our newsletter to stay up to date on our latest offerings!</h1>
 				<h3>Simply send an e-mail to <a href="mailto:customers-subscribe@macavionics.com">customers-subscribe@macavionics.com</a></h3>
-				<!--
+				
 				<form action="subscribe.php" method="get" id="subscribe-form">
 					<label for="req-email">Your E-mail:</label>
-					<input style="color: black; border-radius: 10px" type="email" name="req-email" value="">
+					<input style="color: black; border-radius: 10px" type="email" name="req-email" value="someone@example.com">
+					<input style="color: black; border-radius: 10px" type="text" name="req-name" value="Full Name">					
 					<input style="border-radius: 10px; background-color: #E47201" type="submit">
 				</form>
-				-->
-			-->
+				
 			</div>
 		</div>
 		
