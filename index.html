@@ -227,14 +227,30 @@
 		<div class="section sectThree">
 			
 			<div class="email-signup">
-				<h1>Sign up to our newsletter to stay up to date on our latest offerings!</h1>
-				<h3>Simply send an e-mail to <a href="mailto:customers-subscribe@macavionics.com">customers-subscribe@macavionics.com</a></h3>
+				<h1 style="text-align: center;">Reserve your spot for future seminars with our sponsors!</h1><br>
 				
-				<form action="subscribe.php" method="get" id="subscribe-form">
-					<label for="req-email">Your E-mail:</label>
-					<input style="color: black; border-radius: 10px" type="email" name="req-email" value="someone@example.com">
-					<input style="color: black; border-radius: 10px" type="text" name="req-name" value="Full Name">					
-					<input style="border-radius: 10px; background-color: #E47201" type="submit">
+				<div class="col-sm-4"></div>
+				<form action="subscribe.php" method="get" id="subscribe-form" class="col-sm-4">
+					<label style="" for="req-email">Your Name:           </label>
+					<input style="color: black; border-radius: 10px;" type="text" name="req-name" value=""><br>
+					
+					<label for="req-email">Your E-mail:         </label>
+					<input style="color: black; border-radius: 10px" type="email" name="req-email" value=""><br>
+					
+					<label for="req-email">Airplane Make:       </label>
+					<input style="color: black; border-radius: 10px" type="text" name="req-make" value=""><br>
+					
+					<label for="req-email">Airplane Model:      </label>
+					<input style="color: black; border-radius: 10px" type="text" name="req-model" value=""><br>
+					
+					<label for="req-email">Tail Number:</label>
+					<input style="color: black; border-radius: 10px" type="text" name="req-tailNum" value=""><br><br>
+					
+					<input type="checkbox" name="option1" value="appareo">Appareo seminar on 5/01/17<br>
+					<input type="checkbox" name="option2" value="avidyne">Avidyne seminar on 6/01/17<br>
+					<input type="checkbox" name="option3" value="all">All 2017 seminars<br><br>
+					
+					<input style="border-radius: 10px; background-color: #E47201;" type="submit">
 				</form>
 				
 			</div>

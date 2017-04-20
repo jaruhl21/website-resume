@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	width: 100%;
 }
 
 span {
@@ -110,7 +111,7 @@ a:hover {
 
 .sectThree {
  	background-image: url(../Images/homepage/pic3.jpg);
- 	height: 500px;
+ 	height: 600px;
 }
 
 .sectOne-about {
@@ -167,7 +168,7 @@ a:hover {
 
 .email-signup {
 	color: white;
-	text-align: center;
+	
 	padding-top: 150px;
 }
 
