@@ -1,309 +1,46 @@
-html, body {
-	height: 100%;
+html, body{
+  height:100%;
+  margin: 0px;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto/Roboto-Thin.ttf");
+}
+h1 {
+	font-family: Roboto;
+	font-size: 80px;
+	margin: 0px;
+}
+a {
+	font-family: Roboto;
+	font-size: 20px;
+	margin: 0px;
+	text-decoration: none;
+}
+.indexSectionOne {
+	margin: 0px;
+	background-image: url(../images/index/backgroundOne.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
 	width: 100%;
-}
-
-span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
-}
-
-#map {
-    height: 200px;
-    width: 75%;
-}
-
-.navbar-padding {
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-.navbar-right {
-	padding-right: 20px;
-}
-
-.navbar-brand {
-	padding-top: 10px;
-}
-
-.navbar-logo {
-	height: 80px;
-}
-
-.topper-dark-left {
-	background: #E47201;
-	padding: 5px;
-	padding-left: 20px;
-	text-align: left;
-	color: #ffffff;
-	font-size: 13px;
-}
-
-.topper-dark-right {
-	background: #E47201;
-	padding: 5px;
-	padding-right: 20px;
-	text-align: right;
-	color: #ffffff;
-	font-size: 13px;
-}
-
-.slide-size {
-	padding-top: 130px;
 	height: 100%;
-}
-
-.seperator {
-	background-color: #E47201;
-	text-align: center; 
-	color: #E47201;
-}
-
-a:hover {
-	color: #E47201;
-}
-
-.body-black {
-	background-color: #000000;
-	color: #ffffff;
-	text-align: center; 
-	padding: 20px;
-}
-
-.thumbnail {
-	background-color: #000000;
-	border-color: #000000;
-	max-width: 150%;
-}
-
-.caption {
 	color: white;
-	height: 100px;
 }
- 
-.section {
-	background-color: #E47201;
- 	height: 100%;
- 	background-size: cover;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-position: center center;
- 	background-repeat: no-repeat;
- 	background-attachment: fixed;
-}
-
-.subsection {
- 	background-color: black;
- 	min-height: 25%;
- 	color: white;
-}
-
-.sectOne {
- 	background-image: url(../Images/homepage/pic1.jpg);
-}
-
-.sectTwo {
- 	background-image: url(../Images/homepage/pic2.jpg);
- 	height: 60%;
-}
-
-.sectThree {
- 	background-image: url(../Images/homepage/pic3.jpg);
- 	height: 600px;
-}
-
-.sectOne-about {
-	padding-top: 100px;
-	background-image: url(../Images/about/company.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 70%;
-}
-
-.sectTwo-about {
-	background-image: url(../Images/about/pic.jpg);
-	height: 50%;
-}
-
-.partners {
-	background-color: white;
-	padding: 50px;
-	padding-bottom: 100px;
-	color: black;
-}
-
-.home-about {
+table.homepageTableOne {
+	width: 100%;
+	height: 100%;
 	text-align: center;
-	padding-bottom: 20px;
-}
-
-.home-about-paragraph {
-	height: 300px;
-	text-align: center;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	padding-left: 140px;
-	padding-right: 140px;
 	vertical-align: middle;
-	line-height: 300px;
 }
-
-.footer-strip {
-	background-color: #E47201;
+.resumeButton {
+	padding: 10px;
+	background-color: aqua;
 	color: white;
-	text-align: left;
+	border-radius: 5px;
 }
-
-.partner-image {
-	max-width: 100%;
-}
-
-.store-coming-soon {
-	color: white;
-	text-align: center;
-	padding-top: 300px;
-}
-
-.email-signup {
-	color: white;
-	
-	padding-top: 150px;
-}
-
-.about-text {
-	text-align: center;
-	padding: 25px;
-}
-
-.about-paragraph {
-	padding: 75px 150px;
-}
-
-.about-paragraph-2 {
-	padding: 35px 150px;
-}
-
-.service-image {
+.indexSectionTwo {
 	background-color: white;
-	height: 300px;
-	background-image: url(../Images/services/adsbEquipmentInstallation.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-.about-image {
-	background-color: white;
-	height: 300px;
-	background-image: url(../Images/services/adsbEquipmentInstallation.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-.aboutOne {
-	background-image: url(../Images/about/dash.jpg);
-}
-
-.aboutTwo {
-	background-image: url(../Images/about/buildingOutside.jpg);
-}
-
-.about-description {
-	height: 300px;
-	line-height: 300px;
-	padding: 0px 100px;
-}
-
-.serviceOne {
-	background-image: url(../Images/services/electronicFlightDisplayInstallation.jpg);
-}
-
-.serviceTwo {
-	background-image: url(../Images/services/backupElectronicDisplayInstallation.jpg);
-}
-
-.serviceThree {
-	background-image: url(../Images/services/adsbEquipmentInstallation.png);
-}
-
-.serviceFour {
-	background-image: url(../Images/services/audioPanelInstallation.png);
-}
-
-.serviceFive {
-	background-image: url(../Images/services/autopilotSystemInstallation.png);
-}
-
-.serviceSix {
-	background-image: url(../Images/services/avionicInspection.jpg);
-}
-
-.service-description {
-	height: 300px;
-	line-height: 150px;
-	padding: 0px 30px;
-}
-
-.footer-contact {
-	padding: 50px;
-}
-
-@media (max-width: 1160px) {
-	.home-about-paragraph, .about-paragraph, .about-paragraph-2 {
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-bottom: 5px;
-	}
-
-	.about-paragraph {
-		padding-top: 40px;
-	}
-
-	.sectOne {
-		height: 60%;
-	}
-
-	.slide-size {
-		padding-top: 100px;
-	}
-}
-
-@media (max-width: 1025px) {
-	.section {
-		background-attachment: scroll;
-	}
-}
-
-@media (max-width: 767px) {
-	.navber-brand {
-		height: 80px;
-	}
-
-	.navbar-logo {
-		height: 60px;
-		padding-top: 10px;
-	}
-
-	.home-about-paragraph {
-		height: 100%;
-		padding-bottom: 30px;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-
-	.service-description {
-		height: 100%;
-		line-height: 100%;
-	}
-
-	.about-description {
-		height: 100%;
-		line-height: 100%;
-		padding: 10px;
-	}
-
-	.section {
-		background-attachment: scroll;
-	}
+	height: 50%;
 }
