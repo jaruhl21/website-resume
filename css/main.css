@@ -22,7 +22,6 @@ a {
 	background-image: url(../images/index/backgroundOne.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100%;
 	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
@@ -43,4 +42,9 @@ table.homepageTableOne {
 .indexSectionTwo {
 	background-color: white;
 	height: 50%;
+}
+@media (max-width: 767px) {
+	.indexSectionOne {
+		background-attachment: scroll;
+	}
 }
