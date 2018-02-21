@@ -12,9 +12,18 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="js/main.js"></script>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#desktop-content" data-offset="0">
+		<div id="desktop-content">
+			<ul class="nav justify-content-end fixed-top">
+				<li class="nav-item"><a href="#mainDescription">Intro</a></li>
+				<li class="nav-item"><a href="#Microtips">Microtips</a></li>
+				<li class="nav-item"><a href="#Digitech">Digitech</a></li>
+				<li class="nav-item"><a href="#UCF">UCF</a></li>
+			</ul>
+		</div>
 		<div class="indexSectionPic indexSectionOne">
 			<div class="container">
 				<table class="homepageTable">
@@ -34,12 +43,16 @@
 			</div>
 		</div>
 		<div class="indexSectionDescription">
-			<div class="container">
-				<p class="mainDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Ac felis donec et odio. Magna fermentum iaculis eu non. Id velit ut tortor pretium. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. At elementum eu facilisis sed odio morbi quis commodo odio. Ornare arcu odio ut sem nulla pharetra diam sit. Volutpat ac tincidunt vitae semper quis lectus. Porttitor rhoncus dolor purus non enim. Morbi enim nunc faucibus a pellentesque. Massa tincidunt dui ut ornare lectus.<br><br>
-				Vitae ultricies leo integer malesuada nunc vel risus commodo. Risus quis varius quam quisque id diam vel quam elementum. Non tellus orci ac auctor augue mauris. Amet nisl purus in mollis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque id diam vel quam elementum pulvinar etiam non. Arcu ac tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Ac tortor vitae purus faucibus. Neque sodales ut etiam sit amet nisl purus in. Purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam id leo in vitae turpis massa.</p>
+			<div class="container belowPicDescription">
+				<h3>Who I Am</h3>
+				<p id="mainDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Ac felis donec et odio. Magna fermentum iaculis eu non. Id velit ut tortor pretium. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. At elementum eu facilisis sed odio morbi quis commodo odio. Ornare arcu odio ut sem nulla pharetra diam sit. Volutpat ac tincidunt vitae semper quis lectus. Porttitor rhoncus dolor purus non enim. Morbi enim nunc faucibus a pellentesque. Massa tincidunt dui ut ornare lectus.</p>
+				<h3>What I Do</h3>
+				<p>Vitae ultricies leo integer malesuada nunc vel risus commodo. Risus quis varius quam quisque id diam vel quam elementum. Non tellus orci ac auctor augue mauris. Amet nisl purus in mollis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque id diam vel quam elementum pulvinar etiam non. Arcu ac tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Ac tortor vitae purus faucibus. Neque sodales ut etiam sit amet nisl purus in. Purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam id leo in vitae turpis massa.</p>
+				<h3>My Skills</h3>
+				<p>Vitae ultricies leo integer malesuada nunc vel risus commodo. Risus quis varius quam quisque id diam vel quam elementum. Non tellus orci ac auctor augue mauris. Amet nisl purus in mollis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque id diam vel quam elementum pulvinar etiam non. Arcu ac tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Ac tortor vitae purus faucibus. Neque sodales ut etiam sit amet nisl purus in. Purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam id leo in vitae turpis massa.</p>
 			</div>
 		</div>
-		<div class="indexSectionPic indexSectionMicrotips">
+		<div class="indexSectionPic indexSectionMicrotips" id="Microtips">
 			<div class="container">
 				<table class="homepageTable">
 					<tr style="height: 100%">
@@ -52,12 +65,14 @@
 			</div>
 		</div>
 		<div class="indexSectionDescription">
-			<div class="container">
-				<p class="mainDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Ac felis donec et odio. Magna fermentum iaculis eu non. Id velit ut tortor pretium. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. At elementum eu facilisis sed odio morbi quis commodo odio. Ornare arcu odio ut sem nulla pharetra diam sit. Volutpat ac tincidunt vitae semper quis lectus. Porttitor rhoncus dolor purus non enim. Morbi enim nunc faucibus a pellentesque. Massa tincidunt dui ut ornare lectus.<br><br>
-				Vitae ultricies leo integer malesuada nunc vel risus commodo. Risus quis varius quam quisque id diam vel quam elementum. Non tellus orci ac auctor augue mauris. Amet nisl purus in mollis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque id diam vel quam elementum pulvinar etiam non. Arcu ac tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Ac tortor vitae purus faucibus. Neque sodales ut etiam sit amet nisl purus in. Purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam id leo in vitae turpis massa.</p>
+			<div class="container belowPicDescription">
+				<h3>Main Objectives</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Ac felis donec et odio. Magna fermentum iaculis eu non. Id velit ut tortor pretium. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. At elementum eu facilisis sed odio morbi quis commodo odio. Ornare arcu odio ut sem nulla pharetra diam sit. Volutpat ac tincidunt vitae semper quis lectus. Porttitor rhoncus dolor purus non enim. Morbi enim nunc faucibus a pellentesque. Massa tincidunt dui ut ornare lectus.</p>
+				<h3>Projects & Achievements</h3>
+				<p>Vitae ultricies leo integer malesuada nunc vel risus commodo. Risus quis varius quam quisque id diam vel quam elementum. Non tellus orci ac auctor augue mauris. Amet nisl purus in mollis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque id diam vel quam elementum pulvinar etiam non. Arcu ac tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Ac tortor vitae purus faucibus. Neque sodales ut etiam sit amet nisl purus in. Purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam id leo in vitae turpis massa.</p>
 			</div>
 		</div>
-		<div class="indexSectionPic indexSectionDigitech">
+		<div class="indexSectionPic indexSectionDigitech" id="Digitech">
 			<div class="container">
 				<table class="homepageTable">
 					<tr style="height: 100%">
@@ -70,12 +85,14 @@
 			</div>
 		</div>
 		<div class="indexSectionDescription">
-			<div class="container">
-				<p class="mainDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Ac felis donec et odio. Magna fermentum iaculis eu non. Id velit ut tortor pretium. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. At elementum eu facilisis sed odio morbi quis commodo odio. Ornare arcu odio ut sem nulla pharetra diam sit. Volutpat ac tincidunt vitae semper quis lectus. Porttitor rhoncus dolor purus non enim. Morbi enim nunc faucibus a pellentesque. Massa tincidunt dui ut ornare lectus.<br><br>
-				Vitae ultricies leo integer malesuada nunc vel risus commodo. Risus quis varius quam quisque id diam vel quam elementum. Non tellus orci ac auctor augue mauris. Amet nisl purus in mollis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque id diam vel quam elementum pulvinar etiam non. Arcu ac tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Ac tortor vitae purus faucibus. Neque sodales ut etiam sit amet nisl purus in. Purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam id leo in vitae turpis massa.</p>
+			<div class="container belowPicDescription">
+				<h3>Main Objectives</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Ac felis donec et odio. Magna fermentum iaculis eu non. Id velit ut tortor pretium. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. At elementum eu facilisis sed odio morbi quis commodo odio. Ornare arcu odio ut sem nulla pharetra diam sit. Volutpat ac tincidunt vitae semper quis lectus. Porttitor rhoncus dolor purus non enim. Morbi enim nunc faucibus a pellentesque. Massa tincidunt dui ut ornare lectus.</p>
+				<h3>Projects & Achievements</h3>
+				<p>Vitae ultricies leo integer malesuada nunc vel risus commodo. Risus quis varius quam quisque id diam vel quam elementum. Non tellus orci ac auctor augue mauris. Amet nisl purus in mollis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque id diam vel quam elementum pulvinar etiam non. Arcu ac tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Ac tortor vitae purus faucibus. Neque sodales ut etiam sit amet nisl purus in. Purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam id leo in vitae turpis massa.</p>
 			</div>
 		</div>
-		<div class="indexSectionPic indexSectionStudent">
+		<div class="indexSectionPic indexSectionStudent" id="UCF">
 			<div class="container">
 				<table class="homepageTable">
 					<tr style="height: 100%">
@@ -88,10 +105,13 @@
 			</div>
 		</div>
 		<div class="indexSectionDescription">
-			<div class="container">
-				<p class="mainDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Ac felis donec et odio. Magna fermentum iaculis eu non. Id velit ut tortor pretium. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. At elementum eu facilisis sed odio morbi quis commodo odio. Ornare arcu odio ut sem nulla pharetra diam sit. Volutpat ac tincidunt vitae semper quis lectus. Porttitor rhoncus dolor purus non enim. Morbi enim nunc faucibus a pellentesque. Massa tincidunt dui ut ornare lectus.<br><br>
-				Vitae ultricies leo integer malesuada nunc vel risus commodo. Risus quis varius quam quisque id diam vel quam elementum. Non tellus orci ac auctor augue mauris. Amet nisl purus in mollis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque id diam vel quam elementum pulvinar etiam non. Arcu ac tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Ac tortor vitae purus faucibus. Neque sodales ut etiam sit amet nisl purus in. Purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam id leo in vitae turpis massa.</p>
+			<div class="container belowPicDescription">
+				<h3>Main Objectives</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Ac felis donec et odio. Magna fermentum iaculis eu non. Id velit ut tortor pretium. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. At elementum eu facilisis sed odio morbi quis commodo odio. Ornare arcu odio ut sem nulla pharetra diam sit. Volutpat ac tincidunt vitae semper quis lectus. Porttitor rhoncus dolor purus non enim. Morbi enim nunc faucibus a pellentesque. Massa tincidunt dui ut ornare lectus.</p>
+				<h3>Projects & Achievements</h3>
+				<p>Vitae ultricies leo integer malesuada nunc vel risus commodo. Risus quis varius quam quisque id diam vel quam elementum. Non tellus orci ac auctor augue mauris. Amet nisl purus in mollis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque id diam vel quam elementum pulvinar etiam non. Arcu ac tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Ac tortor vitae purus faucibus. Neque sodales ut etiam sit amet nisl purus in. Purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam id leo in vitae turpis massa.</p>
 			</div>
 		</div>
+		<div style="background-color: #AAAAAA; height: 20%;"></div>
 	</body>
 </html>
