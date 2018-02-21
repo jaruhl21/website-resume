@@ -6,9 +6,33 @@ html, body{
 	font-family: "Roboto";
 	src: url("../fonts/Roboto/Roboto-Thin.ttf");
 }
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+}
 h1 {
 	font-family: Roboto;
+	font-size: 150px;
+	margin: 0px;
+}
+h2 {
+	font-family: Roboto;
 	font-size: 80px;
+	margin: 0px;
+}
+h3 {
+	font-family: Roboto;
+	font-size: 40px;
+	margin: 0px;
+}
+h4 {
+	font-family: Roboto;
+	font-size: 20px;
+	margin: 0px;
+}
+p {
+	font-family: OpenSans;
+	font-size: 15px;
 	margin: 0px;
 }
 a {
@@ -17,17 +41,24 @@ a {
 	margin: 0px;
 	text-decoration: none;
 }
-.indexSectionOne {
+.indexSectionPic {
 	margin: 0px;
 	background-image: url(../images/index/backgroundOne.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 	color: white;
 }
-table.homepageTableOne {
+.indexSectionPic > .container {
+	height: 100%;
+}
+.indexSectionOne {
+	background-image: url(../images/index/backgroundOne.jpeg);
+}
+table.homepageTable {
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -38,13 +69,42 @@ table.homepageTableOne {
 	background-color: aqua;
 	color: white;
 	border-radius: 5px;
+	margin-right: 10px;
 }
-.indexSectionTwo {
+.homepageIcons {
+	padding: 10px;
+	font-size: 24px;
+}
+.indexSectionDescription {
 	background-color: white;
-	height: 50%;
+}
+.mainDescription {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.indexSectionMicrotips {
+	background-image: url(../images/index/Microtips.jpeg);
+}
+.indexSectionDigitech {
+	background-image: url(../images/index/Digitech.jpeg);
+}
+.indexSectionStudent {
+	background-image: url(../images/index/Student.JPG);
 }
 @media (max-width: 767px) {
-	.indexSectionOne {
+	.indexSectionPic {
 		background-attachment: scroll;
+	}
+	h1 {
+		font-size: 75px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	h4 {
+		font-size: 15px;
 	}
 }
