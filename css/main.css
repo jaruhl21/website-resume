@@ -109,6 +109,11 @@ table.homepageTable {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
+.progressBars {
+}
+.showProgressBars {
+	background-color: #190fde;
+}
 .indexSectionMicrotips {
 	background-image: url(../images/index/Microtips.jpeg);
 }
