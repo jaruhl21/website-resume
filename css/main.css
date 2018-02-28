@@ -67,10 +67,9 @@ a {
 .indexSectionPic {
 	margin: 0px;
 	background-image: url(../images/index/backgroundOne.jpeg);
-	background-position: center;
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
 	width: 100%;
 	height: 100%;
 	color: white;
@@ -109,19 +108,16 @@ table.homepageTable {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-.progressBars {
-}
-.showProgressBars {
-	background-color: #190fde;
-}
 .indexSectionMicrotips {
 	background-image: url(../images/index/Microtips.jpeg);
 }
 .indexSectionDigitech {
 	background-image: url(../images/index/Digitech.jpeg);
+	background-size: cover;
 }
 .indexSectionStudent {
 	background-image: url(../images/index/Student.JPG);
+	background-size: cover;
 }
 @media (max-width: 767px) {
 	.indexSectionPic {
