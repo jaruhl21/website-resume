@@ -113,11 +113,9 @@ table.homepageTable {
 }
 .indexSectionDigitech {
 	background-image: url(../images/index/Digitech.jpeg);
-	background-size: cover;
 }
 .indexSectionStudent {
 	background-image: url(../images/index/Student.JPG);
-	background-size: cover;
 }
 @media (max-width: 767px) {
 	.indexSectionPic {

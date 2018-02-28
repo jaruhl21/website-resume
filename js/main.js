@@ -12,7 +12,7 @@ $(document).ready(function() {
 	var progressBarPosition = $('.progressBars').position();
 	var vertProgressBarPosition = progressBarPosition.top;
 	// alert(vertProgressBarPosition);
-	var showProgressBars = vertProgressBarPosition - windowHeight + 200;
+	var showProgressBars = vertProgressBarPosition - windowHeight + 100;
 	// alert(showProgressBars);
 	var progressBarHeight = $('.progressBarRowOne').height();
 
@@ -47,15 +47,20 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
 	var scrollTopVal = $(this).scrollTop();
-	var scrollTopValPercentage = scrollTopVal/windowHeight*20 + 50;
+	var scrollTopValPercentage = scrollTopVal/windowHeight*10 + 50;
 	var microtipsHeight = $('.indexSectionMicrotips').position();
-	var microtipsheightVal = microtipsHeight.top;
-	var x = scrollTopVal/microtipsheightVal*20 + 30;
-	console.log("s: " + scrollTopVal + " m: " + microtipsheightVal + " x: " + x);
-	console.log(scrollTopValPercentage);
+	var microtipsheightValPercentage = scrollTopVal/(microtipsHeight.top)*23 + 27;
+	var DigitechHeight = $('.indexSectionDigitech').position();
+	var DigitechheightValPercentage = scrollTopVal/(DigitechHeight.top)*35 + 15;
+	var StudentHeight = $('.indexSectionStudent').position();
+	var StudentheightValPercentage = scrollTopVal/(StudentHeight.top)*50;
+	console.log("scrollTop: " + scrollTopVal + " 1: " + scrollTopValPercentage + " 2: " + microtipsheightValPercentage + " 3: " + DigitechheightValPercentage + " 4: " + StudentheightValPercentage);
+	// console.log("s: " + scrollTopVal + " m: " + microtipsHeight.top + " microtipsheightValPercentage: " + microtipsheightValPercentage);
 
 	$('.indexSectionOne').css('background-position', '50% ' + scrollTopValPercentage + '%');
-	$('.indexSectionMicrotips').css('background-position', '50% ' + x + '%');
+	$('.indexSectionMicrotips').css('background-position', '50% ' + microtipsheightValPercentage + '%');
+	$('.indexSectionDigitech').css('background-position', '50% ' + DigitechheightValPercentage + '%');
+	$('.indexSectionStudent').css('background-position', '50% ' + StudentheightValPercentage + '%');
 });
 
 // $('.indexSectionStudent').waypoint(function() {
