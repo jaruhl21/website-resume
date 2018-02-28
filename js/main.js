@@ -12,35 +12,55 @@ $(document).ready(function() {
 	var progressBarPosition = $('.progressBars').position();
 	var vertProgressBarPosition = progressBarPosition.top;
 	// alert(vertProgressBarPosition);
-	var showProgressBars = vertProgressBarPosition - windowHeight + 100;
+	var showProgressBars = vertProgressBarPosition - windowHeight + 300;
 	// alert(showProgressBars);
 	var progressBarHeight = $('.progressBarRowOne').height();
 
 	$(window).scroll(function() {
 		if ($(document).scrollTop() > showProgressBars) {
-			$('.progressBarRowOne').show();
+			$('.progressBarRowOne').css("opacity", "1");
+			// if ($('.HTMLProg').css("width") == 0) {
+			// 	for (var i = 0; i <=100; i++) {
+			// 		(function(i) {
+			// 			setTimeout(function() {
+			// 				$('.HTMLProg').css("width", i + "%");
+			// 			}, 10*i);
+			// 		})(i);
+			// 	};
+			// }
+			// $('.HTMLProg').animate({width: "100%"}, {duration: 500});
 		} else {
-			$('.progressBarRowOne').hide();
+			$('.progressBarRowOne').css("opacity", "0");
+			// if ($('.HTMLProg').css("width") != 0) {
+			// 	for (var i = 100; i >= 0; i--) {
+			// 		(function(i) {
+			// 			setTimeout(function() {
+			// 				$('.HTMLProg').css("width", i + "%");
+			// 			}, 10*i);
+			// 		})(i);
+			// 	};
+			// }
+			// $('.HTMLProg').animate({width: "0%"}, {duration: 500});
 		}
 		if ($(document).scrollTop() > showProgressBars + progressBarHeight*1) {
-			$('.progressBarRowTwo').show();
+			$('.progressBarRowTwo').css("opacity", "1");
 		} else {
-			$('.progressBarRowTwo').hide();
+			$('.progressBarRowTwo').css("opacity", "0");
 		}
 		if ($(document).scrollTop() > showProgressBars + progressBarHeight*2) {
-			$('.progressBarRowThree').show();
+			$('.progressBarRowThree').css("opacity", "1");
 		} else {
-			$('.progressBarRowThree').hide();
+			$('.progressBarRowThree').css("opacity", "0");
 		}
 		if ($(document).scrollTop() > showProgressBars + progressBarHeight*3) {
-			$('.progressBarRowFour').show();
+			$('.progressBarRowFour').css("opacity", "1");
 		} else {
-			$('.progressBarRowFour').hide();
+			$('.progressBarRowFour').css("opacity", "0");
 		}
 		if ($(document).scrollTop() > showProgressBars + progressBarHeight*4) {
-			$('.progressBarRowFive').show();
+			$('.progressBarRowFive').css("opacity", "1");
 		} else {
-			$('.progressBarRowFive').hide();
+			$('.progressBarRowFive').css("opacity", "0");
 		}
 	});
 });
@@ -54,7 +74,7 @@ $(window).scroll(function() {
 	var DigitechheightValPercentage = scrollTopVal/(DigitechHeight.top)*35 + 15;
 	var StudentHeight = $('.indexSectionStudent').position();
 	var StudentheightValPercentage = scrollTopVal/(StudentHeight.top)*50;
-	console.log("scrollTop: " + scrollTopVal + " 1: " + scrollTopValPercentage + " 2: " + microtipsheightValPercentage + " 3: " + DigitechheightValPercentage + " 4: " + StudentheightValPercentage);
+	// console.log("scrollTop: " + scrollTopVal + " 1: " + scrollTopValPercentage + " 2: " + microtipsheightValPercentage + " 3: " + DigitechheightValPercentage + " 4: " + StudentheightValPercentage);
 	// console.log("s: " + scrollTopVal + " m: " + microtipsHeight.top + " microtipsheightValPercentage: " + microtipsheightValPercentage);
 
 	$('.indexSectionOne').css('background-position', '50% ' + scrollTopValPercentage + '%');

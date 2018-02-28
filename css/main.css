@@ -108,6 +108,21 @@ table.homepageTable {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
+/*.progressBarRowOne {
+	transition: 3s;
+}
+.progressBarRowTwo {
+	transition: 3.2s;
+}
+.progressBarRowThree {
+	transition: 3.4s;
+}
+.progressBarRowFour {
+	transition: 3.6s;
+}
+.progressBarRowFive {
+	transition: 3.8s;
+}*/
 .indexSectionMicrotips {
 	background-image: url(../images/index/Microtips.jpeg);
 }
@@ -144,5 +159,9 @@ table.homepageTable {
 	}
 	.homepageIcons {
 		font-size: 18px;
+	}
+	.belowPicDescription {
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 }
