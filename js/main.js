@@ -12,55 +12,35 @@ $(document).ready(function() {
 	var progressBarPosition = $('.progressBars').position();
 	var vertProgressBarPosition = progressBarPosition.top;
 	// alert(vertProgressBarPosition);
-	var showProgressBars = vertProgressBarPosition - windowHeight + 300;
+	var showProgressBars = vertProgressBarPosition - windowHeight + 200;
 	// alert(showProgressBars);
 	var progressBarHeight = $('.progressBarRowOne').height();
 
 	$(window).scroll(function() {
 		if ($(document).scrollTop() > showProgressBars) {
-			$('.progressBarRowOne').css("opacity", "1");
-			// if ($('.HTMLProg').css("width") == 0) {
-			// 	for (var i = 0; i <=100; i++) {
-			// 		(function(i) {
-			// 			setTimeout(function() {
-			// 				$('.HTMLProg').css("width", i + "%");
-			// 			}, 10*i);
-			// 		})(i);
-			// 	};
-			// }
-			// $('.HTMLProg').animate({width: "100%"}, {duration: 500});
+			$('.progressBarRowOne > div > .progress-bar').css("width", "100%");
 		} else {
-			$('.progressBarRowOne').css("opacity", "0");
-			// if ($('.HTMLProg').css("width") != 0) {
-			// 	for (var i = 100; i >= 0; i--) {
-			// 		(function(i) {
-			// 			setTimeout(function() {
-			// 				$('.HTMLProg').css("width", i + "%");
-			// 			}, 10*i);
-			// 		})(i);
-			// 	};
-			// }
-			// $('.HTMLProg').animate({width: "0%"}, {duration: 500});
+			$('.progressBarRowOne > div > .progress-bar').css("width", "0%");
 		}
 		if ($(document).scrollTop() > showProgressBars + progressBarHeight*1) {
-			$('.progressBarRowTwo').css("opacity", "1");
+			$('.progressBarRowTwo > div > .progress-bar').css("width", "80%");
 		} else {
-			$('.progressBarRowTwo').css("opacity", "0");
+			$('.progressBarRowTwo > div > .progress-bar').css("width", "0%");
 		}
 		if ($(document).scrollTop() > showProgressBars + progressBarHeight*2) {
-			$('.progressBarRowThree').css("opacity", "1");
+			$('.progressBarRowThree > div > .progress-bar').css("width", "80%");
 		} else {
-			$('.progressBarRowThree').css("opacity", "0");
+			$('.progressBarRowThree > div > .progress-bar').css("width", "0%");
 		}
 		if ($(document).scrollTop() > showProgressBars + progressBarHeight*3) {
-			$('.progressBarRowFour').css("opacity", "1");
+			$('.progressBarRowFour > div > .progress-bar').css("width", "60%");
 		} else {
-			$('.progressBarRowFour').css("opacity", "0");
+			$('.progressBarRowFour > div > .progress-bar').css("width", "0%");
 		}
 		if ($(document).scrollTop() > showProgressBars + progressBarHeight*4) {
-			$('.progressBarRowFive').css("opacity", "1");
+			$('.progressBarRowFive > div > .progress-bar').css("width", "20%");
 		} else {
-			$('.progressBarRowFive').css("opacity", "0");
+			$('.progressBarRowFive > div > .progress-bar').css("width", "0%");
 		}
 	});
 });
