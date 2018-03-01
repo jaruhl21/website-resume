@@ -30,6 +30,12 @@ h4 {
 	font-size: 20px;
 	margin: 0px;
 }
+h5 {
+	font-family: OpenSans;
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
 p {
 	font-family: OpenSans;
 	font-size: 15px;
@@ -111,21 +117,6 @@ table.homepageTable {
 .progress-bar {
 	transition: 1.5s;
 }
-/*.progressBarRowOne {
-	transition: 3s;
-}
-.progressBarRowTwo {
-	transition: 3.2s;
-}
-.progressBarRowThree {
-	transition: 3.4s;
-}
-.progressBarRowFour {
-	transition: 3.6s;
-}
-.progressBarRowFive {
-	transition: 3.8s;
-}*/
 .indexSectionMicrotips {
 	background-image: url(../images/index/Microtips.jpeg);
 }
@@ -137,7 +128,6 @@ table.homepageTable {
 }
 @media (max-width: 767px) {
 	.indexSectionPic {
-		background-attachment: scroll;
 	}
 	h1 {
 		font-size: 75px;
@@ -166,5 +156,10 @@ table.homepageTable {
 	.belowPicDescription {
 		padding-top: 30px;
 		padding-bottom: 30px;
+	}
+}
+@media (min-width: 3000px) {
+	.indexSectionPic {
+		background-size: cover;
 	}
 }
