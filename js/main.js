@@ -20,38 +20,38 @@ $(document).ready(function() {																// Funtion on document ready, this
 		if ($(this).width() >= 576) {														// If device is wider than 575 pixels
 			if ($(document).scrollTop() > showProgressBars) {								// If document is scrolled past defined value
 				$('.HTMLProg').css("width", "100%");										// Make HTMLProg 100% wide
-				$('.HTMLProg2').css("width", "100%");										// Make HTMLProg2 100% wide
+				$('.PythonProg').css("width", "80%");										// Make PythonProg 100% wide
 			} else {																		// If document not scrolled past defined value
 				$('.HTMLProg').css("width", "0%");											// Make HTMLProg 0% wide
-				$('.HTMLProg2').css("width", "0%");											// Make HTMLProg2 0% wide
+				$('.PythonProg').css("width", "0%");											// Make PythonProg 0% wide
 			}
 			if ($(document).scrollTop() > showProgressBars + progressBarHeight*1) {			// Does the same thing as above but adds the height of one progress bar
 				$('.CSSProg').css("width", "80%");											// so that it animates slightly after the first one.
-				$('.CSSProg2').css("width", "80%");
+				$('.JavaProg').css("width", "60%");
 			} else {
 				$('.CSSProg').css("width", "0%");
-				$('.CSSProg2').css("width", "0%");
+				$('.JavaProg').css("width", "0%");
 			}
 			if ($(document).scrollTop() > showProgressBars + progressBarHeight*2) {			// Adds the height of two progress bars
 				$('.JavaScriptProg').css("width", "80%");
-				$('.JavaScriptProg2').css("width", "80%");
+				$('.FrontEndProg').css("width", "40%");
 			} else {
 				$('.JavaScriptProg').css("width", "0%");
-				$('.JavaScriptProg2').css("width", "0%");
+				$('.FrontEndProg').css("width", "0%");
 			}
 			if ($(document).scrollTop() > showProgressBars + progressBarHeight*3) {			// So on...
 				$('.PHPMySQLProg').css("width", "60%");
-				$('.PHPMySQLProg2').css("width", "60%");
+				$('.LeadershipProg').css("width", "100%");
 			} else {
 				$('.PHPMySQLProg').css("width", "0%");
-				$('.PHPMySQLProg2').css("width", "0%");
+				$('.LeadershipProg').css("width", "0%");
 			}
 			if ($(document).scrollTop() > showProgressBars + progressBarHeight*4) {			// and so forth
 				$('.RubyonRailsProg').css("width", "20%");
-				$('.RubyonRailsProg2').css("width", "20%");
+				$('.CommunicationProg').css("width", "80%");
 			} else {
 				$('.RubyonRailsProg').css("width", "0%");
-				$('.RubyonRailsProg2').css("width", "0%");
+				$('.CommunicationProg').css("width", "0%");
 			}
 		} else {																			// If device is smaller than 576 pixels wide
 			if ($(document).scrollTop() > showProgressBars) {								// Does the same as functions above but works on each progress bar individually
@@ -80,29 +80,29 @@ $(document).ready(function() {																// Funtion on document ready, this
 				$('.RubyonRailsProg').css("width", "0%");
 			}
 			if ($(document).scrollTop() > showProgressBars + progressBarHeight*5) {
-				$('.HTMLProg2').css("width", "100%");
+				$('.PythonProg').css("width", "80%");
 			} else {
-				$('.HTMLProg2').css("width", "0%");
+				$('.PythonProg').css("width", "0%");
 			}
 			if ($(document).scrollTop() > showProgressBars + progressBarHeight*6) {
-				$('.CSSProg2').css("width", "80%");
+				$('.JavaProg').css("width", "60%");
 			} else {
-				$('.CSSProg2').css("width", "0%");
+				$('.JavaProg').css("width", "0%");
 			}
 			if ($(document).scrollTop() > showProgressBars + progressBarHeight*7) {
-				$('.JavaScriptProg2').css("width", "80%");
+				$('.FrontEndProg').css("width", "40%");
 			} else {
-				$('.JavaScriptProg2').css("width", "0%");
+				$('.FrontEndProg').css("width", "0%");
 			}
 			if ($(document).scrollTop() > showProgressBars + progressBarHeight*8) {
-				$('.PHPMySQLProg2').css("width", "60%");
+				$('.LeadershipProg').css("width", "100%");
 			} else {
-				$('.PHPMySQLProg2').css("width", "0%");
+				$('.LeadershipProg').css("width", "0%");
 			}
 			if ($(document).scrollTop() > showProgressBars + progressBarHeight*9) {
-				$('.RubyonRailsProg2').css("width", "20%");
+				$('.CommunicationProg').css("width", "80%");
 			} else {
-				$('.RubyonRailsProg2').css("width", "0%");
+				$('.CommunicationProg').css("width", "0%");
 			}
 		}
 	});
