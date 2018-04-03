@@ -10,6 +10,10 @@ html, body{
 	font-family: "OpenSans";
 	src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
 }
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+}
 h1 {
 	font-family: Roboto;
 	font-size: 150px;
@@ -35,6 +39,11 @@ h5 {
 	font-size: 18px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+h6 {
+	font-family: OpenSans-Bold;
+	font-size: 15px;
+	margin: 0px;
 }
 p, ul {
 	font-family: OpenSans;
@@ -64,10 +73,14 @@ a {
 	color: white;
 }
 .shrink {
-	background-color: #AAAAAA;
+	background-color: #aaaaaa;
 }
 .shrink > .nav-item {
 	padding: 10px;
+}
+.colorSplitter {
+	height: 2px;
+	background-color: #3080e8;
 }
 .indexSectionPic {
 	margin: 0px;
@@ -124,9 +137,20 @@ table.homepageTable {
 }
 .progress-bar {
 	transition: 1.5s;
+	background-color: #3080e8;
 }
 .indexSectionMicrotips {
 	background-image: url(../images/index/Microtips.jpeg);
+}
+.microtipsButton {
+	padding: 10px;
+	color: white;
+	background-color: #3080e8;
+	border-radius: 5px;
+	font-family: OpenSans;
+	font-size: 15px;
+	margin: 0px;
+	text-decoration: none;
 }
 .indexSectionDigitech {
 	background-image: url(../images/index/Digitech.jpeg);
